@@ -1,0 +1,247 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.container-img{
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+}
+/*menu*=======================================================================*/
+header{
+    margin-top: 1px;
+    width:100%;
+    padding-right: 2px;
+
+}
+.menu *{
+margin: 0px;
+padding: 0px;
+} 
+.menu ul,
+.menu ol{
+    list-style: none;
+}
+.menu li{
+   width: 25%; 
+}
+.menu > ul{
+    display: flex;
+    justify-content: left ;
+}
+.menu > ul li a{
+display: block ;
+background-color: #04a6dd;
+padding: 12px 30px 12px ;
+font-size: 12px;
+color: azure;
+text-decoration: none;
+text-transform: uppercase;
+transition: all 0.3s ease;
+
+}
+.menu > ul li{
+    position: relative;
+    border-right: 1px solid white;
+}
+.menu > ul li > a i.fa{
+position: absolute;
+top: 12px;
+left: 12px;
+font-size: 14px;
+}
+.menu li a:hover{
+background: white;
+color: #04a6dd;
+transition: all 0.3s ease;
+}
+/*sub menu*================================================================================ */
+.menu li ul {
+position: absolute;
+min-width: 400%;
+display: none;
+}
+.menu li > ul li {
+/* border: 1px solid white; */
+}
+.menu li > ul li a{
+padding: 10px;
+text-transform: none;
+}
+.menu li > ul li ul{
+position: absolute;
+right:-198%;
+top: 0;
+}
+.menu li:hover > ul{
+display: block;
+}
+/*input*====================================================================================*/
+.input{
+padding: 2px 0px;
+display: flex;
+
+}
+.form-control{
+text-align: center;
+padding: 4px;
+margin: 1px;
+border: 1px solid rgb(184, 178, 178);
+box-shadow: 0px 5px 15px  rgba(108,117,125,0.5);
+width:304px;
+outline: none;
+background-color: rgba(108,117,125,0.8);
+color: aliceblue;
+}
+.form-control:hover{
+box-shadow: 0px 5px 15px  rgba(108,117,125,1);
+}
+.form-control::placeholder{
+color: aliceblue;
+}
+/*table*====================================================================================*/
+.data{
+margin-top: 2px ;    
+font-size: 12px;
+background-color: rgba(108,117,125,0.8);
+color: aliceblue;
+border-collapse: collapse;
+box-shadow: 0 5px 15px rgba(108,117,125,1);
+width: 100%;
+text-align: center;
+text-decoration: dashed;
+}
+.data td{
+padding: 0px;
+border: 1px solid rgb(184, 178, 178);
+width: 100%;
+}
+.data td[colspan="2"] {
+    font-weight: bold;
+    text-align: center;
+    background-color: #6c757d;
+}
+.data tr{
+    padding: 4px;
+    /* border: 1px solid rgb(184, 178, 178); */
+    width: 100%;
+    /* text-align: center; */
+}
+/*btn-table*==============================================================================*/
+.btn-table{
+
+    background-color: rgba(108,117,125,.2);
+    width: 150px;
+    border: 1px solid rgb(184, 178, 178);
+    color: aliceblue;
+    margin: 0 ;
+    line-height: 2;
+}
+.btn-table:hover{
+    color: aliceblue;
+    opacity: 0.8;
+    background-color: rgba(108,117,125,1);
+
+}
+/*input-table*==============================================================================*/
+.input-table{
+    background-color: rgba(108,117,125,.1);
+    width: 205px;
+    border: 1px solid rgba(108,117,125,.1)/*rgb(184, 178, 178)*/;
+    color: aliceblue;
+    margin: 0 ;
+    line-height: 2;  
+    color: aliceblue;
+    outline: none;
+    text-align: center;
+}
+.input-table:hover{
+    color: aliceblue;
+    opacity: 0.8;
+    background-color: rgba(108,117,125,1);
+}
+.input-table::placeholder{
+    color: aliceblue;
+    text-align: center;
+}
+/*menu-table*===========================================================================*/
+.menu-table *{
+    margin: 0px;
+    padding: 0px;
+    } 
+    .menu-table ul,
+    .menu-table ol{
+        list-style: none;
+    }
+    .menu-table li{
+       width: 100%; 
+    }
+    .menu-table > ul{
+        /* display: flex; */
+        justify-content: left ;
+    }
+    .menu-table > ul li a{
+    display: block ;
+    background-color: rgba(108,117,125,.1);
+    padding: 12px 30px 12px ;
+    font-size: 12px;
+    color: azure;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    transition: all 0.5s ease;
+    
+    }
+    .menu-table > ul li{
+        position: relative;
+        /* border-right: 1px solid white; */
+    }
+    .menu-table > ul li > a i.fa{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    }
+    .menu-table li a:hover{
+    /* background: white; */
+    /* color: #04a6dd; */
+    transition: all 0.07s ease;
+    background-color: rgba(108,117,125,.1);
+
+    }
+    /*sub menu-table*===================================================================== */
+    .menu-table li ul {
+    position: relative;
+    min-width: 100%;
+    display: none;
+    }
+    .menu-table li > ul li {
+    border-top: 1px solid rgb(184, 178, 178);
+    }
+    .menu-table li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    transition: all 0.07,
+    s ease;
+
+    }
+    .menu-table li > ul li ul{
+    position: absolute;
+    /* right: 1px; */
+    top: 0;
+    }
+    .menu-table li:hover > ul{
+    display: block;
+    background-color: rgba(108,117,125,1);
+    
+    }
+
+    .data1{
+        margin-top: 22px ;    
+        font-size: 12px;
+        background-color: rgba(108,117,125,0.8);
+        color: aliceblue;
+        border-collapse: collapse;
+        box-shadow: 0 5px 15px rgba(108,117,125,1);
+        width: 100%;
+        text-align: center;
+        text-decoration: dashed;
+    }
