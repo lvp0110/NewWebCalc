@@ -1,11 +1,7 @@
 //вывод данных на экран(таблицa)
 function start1(){
     const DATA_MATERIAL = {
-        // 'ЗАГОЛОВОК': [
-        //     ['КОНСТРУКЦИИ', 'ДЛИНА КОНСТРУКЦИИ', 'ШИРИНА КОНСТРУКЦИИ', 'НАСТРОЙКИ']
-            
-        // ]
-        'ПРОФИЛЬ': [
+               'ПРОФИЛЬ': [
             ['ЗИПС-3Ультра.Звукоизоляционная бескаркасная облицовка (55 мм) для неровных стен ', 
                 '<input type="text" id="lenX" class="input-table" placeholder="длина конструкции">',
                 '<input type="text" id="lenX" class="input-table" placeholder="ширина конструкции">',
@@ -27,7 +23,7 @@ function start1(){
        
     }
     
-    document.querySelector('.content').innerHTML = `<table class="data1"></table>`
+    document.querySelector('.content').innerHTML = `<table class="data"></table>`
     for (key in DATA_MATERIAL) {
         let row = document.createElement('tr')
         // row.innerHTML = `<td colspan="5">${key}</td>` 
