@@ -3,14 +3,25 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px;
-
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom,#04a6dd,rgba(108,117,125,0.6)) ;
+    border-radius: 5px;
+    border: 1px solid white;
 }
 .container-img{
     padding: 0px;
     width: 100%;
     background-color: white;
-    position: fixed;
-    margin: 0px;
+    /* position: fixed; */
+    margin-top: 0px;
     z-index: 5;
 }
 img{
@@ -27,20 +38,23 @@ p{
     padding-left: 5px;
     width: 100%;
     background-color: white;
-    margin-top: 70px;
-    position: fixed;
+    margin-top: 0px;
+    /* position: fixed; */
     z-index: 5;
 }
 /*menu*=======================================================================*/
 header{
-    margin-top: 89px;
+    margin-top: -10px;
     width:100%;
-    position: fixed;
+    /* position: fixed; */
     z-index: 5;
 }
 .menu *{
     margin: 0px;
     padding: 0px;
+    z-index: 5;
+    /* position: fixed; */
+
 } 
 .menu ul,
 .menu ol{
@@ -106,7 +120,7 @@ header{
 }
 /*table*====================================================================================*/
 .data{
-    margin-top: 132px ; 
+    margin-top: 2px ; 
     font-size: 12px;
     background-color: rgba(108,117,125,0.8);
     color: aliceblue;
@@ -132,7 +146,6 @@ header{
 } */
 /*btn-table*==============================================================================*/
 /* .btn-table{
-
     background-color: rgba(108,117,125,.2);
     width: auto;
     border: 1px solid rgb(184, 178, 178);
@@ -230,4 +243,3 @@ header{
     background-color: rgba(108,117,125,0.6);
     transition: all 0.5s ease;
 }
-
